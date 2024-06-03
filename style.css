@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+/* Home page styles */
+
+body{
+    background: #e2e7fd;
+    color: #000;
+}
+
+.heroes{
+    height: 100vh;
+}
+
+.heroes .topnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 50px 70px 50px;
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.topnav img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.logo p{
+    margin-top: 7px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.topnav .links{
+    display: flex;
+    gap: 40px;
+}
+
+.links a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.links a:hover{
+    color: #343434;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    transform: translateY(-30px);
+}
+
+#home blockquote{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size: 1.7rem;
+}
+
+/* Style the opening quotation mark */
+blockquote::before {
+    content: open-quote;
+    font-family: Georgia, serif; 
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Style the closing quotation mark */
+blockquote::after {
+    content: close-quote;
+    font-family: Georgia, serif; 
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+}
+
+#author{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 60px;
+    height: 75vh;
+}
+
+#author .profile-img img{
+    background: #343434;
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#author .about{
+    transform: translateY(-100px)
+}
+
+#author div h2{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#author div p{
+    display: flex;
+    justify-content: center;
+    margin: 0 50px 50px 25px;
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+
+#contacts div h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+
+#contacts .mail, #contacts .phone, #contacts .social{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 250px;
+    gap: 20px;
+}
+
+#contacts .social{
+    margin-top: 30px;
+}
+
+
+#contacts .mail img, #contacts .phone img, #contacts .twitter img, #contacts .github img{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.bottom-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 50px 50px 0 0;
+}
+
+.bottom-nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Articles page styles */
+body.articles-body{
+    background: #e2e7fd;
+    color: #343434;
+}
+
+.articles-links{
+    display: flex;
+    gap: 40px;
+    color: #000;
+}
+
+.articles-links a{
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.filter-btns{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.filter-btns button{
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: 700;
+    background: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.filterable-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.filterable-cards .card{
+    flex-basis: 400px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 12px;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.card img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.filterable-cards .card a{
+    margin-top: 7px;
+    text-decoration: none;
+}
+.filterable-cards .card h4{
+    margin-top: 7px;
+}
+
+.filterable-cards .card a:hover{
+    color: #343434;
+}
+
+button.active{
+    background: #4070f4;
+    color: #fff;
+}
